@@ -1,0 +1,50 @@
+
+┌──(dexter㉿DESKTOP-I9EIBE7)-[~]
+└─$ nmap -sS -Pn 192.168.56.1
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-08-04 21:00 IST
+Nmap scan report for 192.168.56.1
+Host is up (0.00047s latency).
+Not shown: 999 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+7070/tcp open  realserver
+
+Nmap done: 1 IP address (1 host up) scanned in 194.71 seconds
+
+
+
+
+Common Vulnerabilities on Port 7070
+1. Unpatched RealServer/RealMedia Services
+CVE-2007-5601: Stack buffer overflow in RealPlayer's ActiveX control — allows remote code execution.
+
+CVE-2008-3060: RealNetworks RealPlayer vulnerability via RTSP streams on port 7070.
+
+Risk: Attackers may craft media streams or malformed requests to trigger remote code execution or DoS.
+
+2. Proxy Misconfiguration
+If 7070 is used by a proxy server (especially SOCKS or HTTP), it may:
+
+Allow unauthorized relay of traffic.
+
+Be abused for anonymous browsing or launching attacks from your IP.
+
+3. Custom or Legacy Applications
+Some custom apps or older enterprise tools use this port. If:
+
+No authentication is enforced.
+
+Weak input validation exists.
+
+Default credentials are used.
+
+Then it's prone to unauthorized access, command injection, or data leaks.
+
+4. RTSP Vulnerabilities (if media streaming is in play)
+Port 7070 is sometimes used for RTSP (Real Time Streaming Protocol):
+
+Susceptible to DoS attacks.
+
+Information disclosure or stream hijacking.
+
+Vulnerabilities in parsers or codecs can lead to RCE (Remote Code Execution).
+
