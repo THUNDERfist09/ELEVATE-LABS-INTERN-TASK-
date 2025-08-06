@@ -1,0 +1,37 @@
+Improving your email security is crucial for protecting your personal and financial information. Here are some of the most effective strategies you can use, broken down into what you can do as a user and what email service providers do on their end.
+
+1. User-Level Best Practices
+Use Strong, Unique Passwords: Create complex passwords for your email account that are difficult to guess. Don't reuse the same password on multiple websites. A strong password should be at least 12 characters long and include a mix of uppercase and lowercase letters, numbers, and symbols.
+
+Enable Two-Factor Authentication (2FA) or Multi-Factor Authentication (MFA): This is one of the most powerful steps you can take. 2FA requires a second form of verification (like a code sent to your phone or a hardware key) in addition to your password. Even if a hacker steals your password, they can't access your account without this second factor.
+
+Be Cautious of Phishing Attempts: Phishing is a major threat.
+
+Check the Sender: Look closely at the sender's email address. Is it slightly misspelled? Does it come from a suspicious domain (e.g., micros0ft.com instead of microsoft.com)?
+
+Inspect Links: Before clicking a link, hover your mouse over it to see the actual URL. If the URL looks suspicious or doesn't match the text, don't click it.
+
+Don't Open Attachments from Unknown Senders: Malicious attachments can install malware on your device. Only open attachments from people you know and trust.
+
+Be Mindful of What You Share: Avoid sharing personal information (like your full name, birth date, or address) with unknown senders. Be especially wary of requests for financial information or passwords.
+
+Regularly Review Account Activity: Most email providers have a security settings section where you can view recent login activity. Check this regularly for any unrecognized logins or suspicious activity.
+
+Keep Your Software Updated: Ensure your operating system, web browser, and antivirus software are always up-to-date. These updates often include critical security patches that protect against new threats.
+
+2. Provider-Level Security (What Your Email Service Does)
+Spam and Phishing Filters: Modern email providers like Gmail, Outlook, and others use advanced machine learning algorithms to detect and filter spam and phishing emails before they even reach your inbox.
+
+Secure Connections (HTTPS/TLS): Your email provider should use encryption (Transport Layer Security or TLS, which is an updated version of SSL) to secure the connection between your device and their servers. This prevents attackers from intercepting your email as it travels across the internet.
+
+DMARC, DKIM, and SPF: These are technical standards that email providers use to prevent email spoofing (when an attacker fakes an email's sender address).
+
+SPF (Sender Policy Framework): Specifies which mail servers are authorized to send email for a domain.
+
+DKIM (DomainKeys Identified Mail): Adds a digital signature to every email, proving it hasn't been altered in transit.
+
+DMARC (Domain-based Message Authentication, Reporting & Conformance): Tells the receiving email server what to do with an email that fails SPF or DKIM checks (e.g., reject it, quarantine it, or deliver it).
+
+Monitoring for Suspicious Activity: Email providers have systems that monitor for suspicious login attempts (e.g., a login from a new country, a new device, or multiple failed login attempts). When detected, they may block the login or send you a security alert.
+
+By combining these user-level practices with the built-in security features of your email provider, you can significantly reduce your risk of falling victim to email-based attacks.
